@@ -1,0 +1,2 @@
+import {describe,it,expect} from 'vitest';import {services,projects,posts,jobs} from './content.js';
+describe('website content architecture',()=>{it('defines all six required services with unique slugs',()=>{expect(services).toHaveLength(6);expect(new Set(services.map(x=>x.slug)).size).toBe(6)});it('provides portfolio, blog and careers detail slugs',()=>{expect(projects.length).toBeGreaterThan(0);expect(posts.every(x=>x.slug&&x.title)).toBe(true);expect(jobs.every(x=>x.slug&&x.title)).toBe(true)});});

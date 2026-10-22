@@ -1,0 +1,2 @@
+import React from 'react'; import { Link } from 'react-router-dom';
+export default function Logo(){return <Link to="/" className="brand" aria-label="Riyadvi home"><img className="brand-image" width="48" height="48" loading="eager" decoding="async" src="https://www.riyadvisoftwaretechnologies.com/riyadvilogo.png" onError={e=>{e.currentTarget.onerror=null;e.currentTarget.src="/riyadvi-mark-fallback.svg";}} alt="Riyadvi Software Technologies logo"/><span className="brand-copy"><strong>RIYADVI</strong><small>SOFTWARE TECHNOLOGIES</small></span></Link>}
